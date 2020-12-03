@@ -126,11 +126,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
-
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
@@ -144,8 +139,6 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CKEDITOR_BASEPATH = "/static/ckeditor/ckeditor"
-
 # ck uploader
 CKEDITOR_UPLOAD_PATH = 'uploads/'  # create directory in media directory
 CKEDITOR_RESTRICT_BY_USER = True
@@ -155,3 +148,9 @@ CKEDITOR_CONFIGS = {
         "removePlugins": "stylesheetparser",
     }
 }
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'media')
+)
