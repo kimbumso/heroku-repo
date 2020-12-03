@@ -1,0 +1,23 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycashe__/
+*.py[cod]
+
+# Distribution / pakaging
+.Python
+venv/
+.env
+
+# Editor Directories and files
+.vscode
+.idea
+*.sue
+*.ntvs*
+*.njsproj
+*.sln
+
+# DB
+db.sqlite3
+.DS_Store
