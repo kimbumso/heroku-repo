@@ -22,5 +22,5 @@ venv/
 db.sqlite3
 .DS_Store
 
-# settings file
-secrets.json
+# settings file. heroku 배포시에는 필요함.
+# secrets.json
