@@ -1,5 +1,3 @@
-boto3==1.9.244
-botocore==1.12.253
 certifi==2020.6.20
 chardet==3.0.4
 configparser==5.0.1
@@ -26,5 +24,4 @@ s3transfer==0.2.1
 six==1.12.0
 sqlparse==0.3.0
 urllib3==1.25.6
-uWSGI==2.0.19.1
 whitenoise==5.2.0
